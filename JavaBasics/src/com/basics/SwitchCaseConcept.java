@@ -1,17 +1,18 @@
 package com.basics;
 
+
 public class SwitchCaseConcept {
 
 	public static void main(String[] args) {
 		
 		//cross browser logic in UI automation
-		//String broswer = "naveen";//String is allowed
+		String broswer = "FireFOX ";//String is allowed
 		
-		/*switch (broswer) {
+		switch (broswer.toLowerCase().trim()) {
 		case "chrome":
 			System.out.println("Chrome is launched");
 			break;
-		case "FF":
+		case "firefox":
 			System.out.println("FF is launched");
 			break;
 		case "edge":
@@ -27,7 +28,7 @@ public class SwitchCaseConcept {
 		case "opera":
 			System.out.println("Opera is launched");
 			break;
-		}*/
+		}
 		
 		/*can i write switch case with integer*/
 	  /*	int marks = 100;//int is allowed
@@ -51,7 +52,7 @@ public class SwitchCaseConcept {
 		// byte,short,int,char - allowed
 		// String - Allowed
 		//float,long,double - are not allowed
-		char ch = 'h';//char is allowed
+		/*char ch = 'h';//char is allowed
 		switch(ch) {
 		
 		case 'a':
@@ -71,7 +72,22 @@ public class SwitchCaseConcept {
 			break;
 		default:
 			System.out.println(ch+ " is a consonant");
-		}
+		}*/
+		
+		/*boolean b = true;
+		switch(b) {
+		
+		case true:
+			System.out.println("Yes");
+			break;
+		case false:
+			System.out.println("No");
+			break;
+		default:
+			System.out.println("neither true nor false");
+			break;
+			
+		}*/
 		
 	}
 
