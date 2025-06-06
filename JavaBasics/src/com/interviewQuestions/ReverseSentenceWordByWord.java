@@ -21,6 +21,8 @@ public class ReverseSentenceWordByWord {
 			reverseStament = reverseStament + reverseWord + " ";
 		}
 		System.out.println("Reversed Sentenace word by word \n"+reverseStament);
+		
+		
 	}
 
 }
