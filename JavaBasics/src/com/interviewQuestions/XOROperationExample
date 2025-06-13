@@ -1,0 +1,84 @@
+🔹 What is XOR (^)?
+XOR stands for exclusive OR.
+
+It operates on bits — that is, 0s and 1s.
+
+The rule for XOR is:
+
+1 ^ 1 == 0
+
+0 ^ 0 == 0
+
+1 ^ 0 == 1
+
+0 ^ 1 == 1
+
+🔹 How swapping with XOR works:
+Let's say we have a = 10 and b = 20.
+
+The bit representation might be:
+
+a = 10 -> 00001010
+b = 20 -> 00010100
+🔹 STEP-BY-STEP EXPLANATION:
+
+a = a ^ b; // (1)
+b = a ^ b; // (2)
+a = a ^ b; // (3)
+Lets compute this carefully:
+
+🔹 STEP 1: a = a ^ b
+a = 10 ^ 20
+    = 00001010 ^ 00010100
+    = 00011110  // which is 30
+So after STEP 1:
+
+a == 30
+
+b == 20
+
+🔹 STEP 2: b = a ^ b
+b = 30 ^ 20
+    = 00011110 ^ 00010100
+    = 00001010  // which is 10
+So after STEP 2:
+
+b == 10
+
+a == 30
+
+🔹 STEP 3: a = a ^ b
+	a = 30 ^ 10
+    = 00011110 ^ 00001010
+    = 00010100  // which is 20
+So after STEP 3:
+
+a == 20
+
+b == 10
+
+✅ Final result:
+
+We swapped a and b without using a temporary variable!
+Originally:
+
+a = 10
+b = 20
+After swap:
+
+a = 20
+b = 10
+✨ Summary:
+✅ XOR lets us swap two variables in place without a temporary variable.
+✅ It works by adding information about both into the first variable, then retrieving it in subsequent operations.
+✅ This is a well-established trick, frequently used in coding interviews.
+
+
+
+
+
+
+
+
+
+
