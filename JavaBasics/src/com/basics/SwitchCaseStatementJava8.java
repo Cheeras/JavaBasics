@@ -28,16 +28,16 @@ public class SwitchCaseStatementJava8 {
 //		case 7 -> System.out.println("Saturday");
 //		default -> System.out.println("Invalid day");
 //		}
-		System.out.println("Grade Evaluation");
-		char ch = in.next().charAt(0);
-		switch(ch) {
-		case 'A' -> System.out.println("Excellent");
-		case 'B' -> System.out.println("Great Job");
-		case 'C' -> System.out.println("Well done");
-		case 'D' -> System.out.println("You passed");
-		case 'F' -> System.out.println("Better Try again");
-		default -> System.out.println("Invalid grade");
-		}
+//		System.out.println("Grade Evaluation");
+//		char ch = in.next().charAt(0);
+//		switch(ch) {
+//		case 'A' -> System.out.println("Excellent");
+//		case 'B' -> System.out.println("Great Job");
+//		case 'C' -> System.out.println("Well done");
+//		case 'D' -> System.out.println("You passed");
+//		case 'F' -> System.out.println("Better Try again");
+//		default -> System.out.println("Invalid grade");
+//		}
 		System.out.println("Simple Calculator");
 		int a = 10 , b=5;
 		char operator = in.next().charAt(0);
