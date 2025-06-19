@@ -15,19 +15,19 @@ public class SwitchCaseStatementJava8 {
 //		case "Grapes" -> System.out.println("Small fruit");
 //		default -> System.out.println("Please enter valid fruit name");
 //		}
-		System.out.println("Days of a week");
-		int day = in.nextInt();
-		
-		switch(day) {
-		case 1 -> System.out.println("Sunday");
-		case 2 -> System.out.println("Monday");
-		case 3 -> System.out.println("Tuesday");
-		case 4 -> System.out.println("Wednesday");
-		case 5 -> System.out.println("Thursday");
-		case 6 -> System.out.println("Friday");
-		case 7 -> System.out.println("Saturday");
-		default -> System.out.println("Invalid day");
-		}
+//		System.out.println("Days of a week");
+//		int day = in.nextInt();
+//		
+//		switch(day) {
+//		case 1 -> System.out.println("Sunday");
+//		case 2 -> System.out.println("Monday");
+//		case 3 -> System.out.println("Tuesday");
+//		case 4 -> System.out.println("Wednesday");
+//		case 5 -> System.out.println("Thursday");
+//		case 6 -> System.out.println("Friday");
+//		case 7 -> System.out.println("Saturday");
+//		default -> System.out.println("Invalid day");
+//		}
 		System.out.println("Grade Evaluation");
 		char ch = in.next().charAt(0);
 		switch(ch) {
@@ -38,6 +38,17 @@ public class SwitchCaseStatementJava8 {
 		case 'F' -> System.out.println("Better Try again");
 		default -> System.out.println("Invalid grade");
 		}
+		System.out.println("Simple Calculator");
+		int a = 10 , b=5;
+		char operator = in.next().charAt(0);
+		switch(operator) {
+		case '+' -> System.out.println(a+b);
+		case '-' -> System.out.println(a-b);
+		case '*' -> System.out.println(a*b);
+		case '/' -> System.out.println(b!=0 ? a/b :"cannot divide by zero");
+		default -> System.out.println("Invalid operator");
+		}
+		
 		in.close();
 	}
 }
