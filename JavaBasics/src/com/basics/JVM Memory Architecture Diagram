@@ -1,0 +1,31 @@
+In Java, static variables are stored in the Method Area (also known as the Class Area or MetaSpace in newer versions of Java like Java 8+).
+
+Memory Location of Static Variables:
+Before Java 8: Static variables were stored in the PermGen (Permanent Generation) area of the JVM memory.
+
+Java 8 and later: Static variables are stored in MetaSpace, which is part of native memory (not Java heap). However, they are still conceptually considered part of the Method Area.
+
+Summary:
+Java Version	Static Variable Memory Location
+Java 7 and earlier	Method Area (PermGen)
+Java 8 and later	Method Area (MetaSpace)
+
+Explanation:
+Static variables are associated with the class, not instances.
+
+They are loaded into memory when the class is first loaded by the ClassLoader.
+
+They remain in memory as long as the class is loaded in the JVM.
+
+Other Memory Areas in JVM:
+Heap – Instance variables (objects)
+
+Stack – Local variables, method call frames
+
+PC Register – Keeps track of the current instruction
+
+Native Method Stack – For native method calls
+
+Method Area (MetaSpace) – Class metadata, static variables, method info
+
+Let me know if you want a diagram or visual representation.
