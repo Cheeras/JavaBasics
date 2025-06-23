@@ -56,6 +56,13 @@ public class DatatypesAssignments {
 		System.out.println(ech);
 		System.out.println((char)ech);
 		
+		//9.Write a program to find the square of the number 3.9
+		float f = 3.9f;
+		//System.out.println(f*f);
+		
+		//Or Using the Math class with pow() method
+		double square = Math.pow(f,2);
+		System.out.println(square);
 		
 	}
 
