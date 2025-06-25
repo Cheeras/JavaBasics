@@ -35,12 +35,41 @@ public class FunctionInJava {
 		int totalfee = fee+tax;
 		return totalfee;
 	}
+	
+	public String getTrinerName() {
+		System.out.println("get Triner Name");
+		return "naveen";
+	}
+	public boolean isUserActive() {
+		System.out.println("Checking user status");
+		return true;
+	}
+	
+	//3.some input and no return
+	//int a , int b it is called the parameter
+	//when we are referring at method body they are called method parameters
+	public void add(int a,int b) {
+		System.out.println("adding 2 numbers");
+		int sum = a + b;
+		System.out.println(sum);
+	}
 	public static void main(String[] args) {
 		FunctionInJava obj = new FunctionInJava();
 		obj.test();
 		obj.calc();
-		System.out.println(obj.getNumber());
-	
+		int t = obj.getNumber();
+		System.out.println(t);
+		String tr = obj.getTrinerName();
+		System.out.println(tr);
+		boolean flag = obj.isUserActive();
+		System.out.println(flag);
+		if(flag) {
+			System.out.println("login to app");
+		}else {
+			System.out.println("not able to login to app");
+		}
+		obj.add(100, 200);// here are 100,200 are called arguments
+		//I am calling the add() by passing the arguments
+		//when we are referring at the caller we will call as arguments
 	}
-
 }
