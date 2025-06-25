@@ -10,14 +10,26 @@ public class FunctionInJava {
 	
 	//functions are independent to each other
 	//functions are parallel to each other
-	//  	
 	
-	static void test() {
+	//no input and no return:
+	//void -- no return, function does not return anything(no return keyword)
+	public void test() {
 		System.out.println("I am from the test method");
 	}
 	
+	public void calc() {
+		System.out.println("Calc method");
+		int a = 10;
+		int b = 20;
+		int c = a + b;
+		System.out.println(c);
+		
+	}
 	public static void main(String[] args) {
-		test();
+		FunctionInJava obj = new FunctionInJava();
+		obj.test();
+		obj.calc();
+	
 	}
 
 }
