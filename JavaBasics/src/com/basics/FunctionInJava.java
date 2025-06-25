@@ -12,10 +12,12 @@ public class FunctionInJava {
 	//functions are parallel to each other
 	//  	
 	
-	
+	static void test() {
+		System.out.println("I am from the test method");
+	}
 	
 	public static void main(String[] args) {
-
+		test();
 	}
 
 }
