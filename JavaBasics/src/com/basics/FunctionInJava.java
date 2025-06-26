@@ -53,6 +53,14 @@ public class FunctionInJava {
 		int sum = a + b;
 		System.out.println(sum);
 	}
+	
+	//4.some input and then with return
+	//int a , int b are called as parameter
+	//when we are referring at method body they are called method parameters
+	public int sum(int a,int b) {
+		System.out.println("Adding two numbers and returning");
+		return a + b;
+	}
 	public static void main(String[] args) {
 		FunctionInJava obj = new FunctionInJava();
 		obj.test();
@@ -71,5 +79,10 @@ public class FunctionInJava {
 		obj.add(100, 200);// here are 100,200 are called arguments
 		//I am calling the add() by passing the arguments
 		//when we are referring at the caller we will call as arguments
-	}
+		int p = obj.sum(20, 30);
+		System.out.println(p);
+		//here 20,30 are called arguments
+		//I am calling the sum by passing the arguments
+		//when we are referring at the caller we will call as arguments
+		}
 }
