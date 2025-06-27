@@ -26,6 +26,9 @@ public class StudentSheet {
 		StudentSheet sh = new StudentSheet();
 		int m = sh.getStudentMarks("priya");
 		System.out.println(m);
+		if(m>0) {
+			System.out.println("print marksheet");
+		}
 		
 		
 	}
