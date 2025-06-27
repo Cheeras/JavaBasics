@@ -20,7 +20,11 @@ public class DiscountBasedOnPurchageAmount {
 	
 	public static void main(String[] args) {
 
-		
+		/*
+		 * 
+		 * Why else if?
+		 *  Only one discount should apply.
+		 * */
 		discountBasedOnPurchageAmount(5000);
 	}
 	
