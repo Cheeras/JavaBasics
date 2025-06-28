@@ -127,6 +127,17 @@ public class EmployeeSheet {
 	//void with blank return is possible
 	//Yes it is possible
 	//after return if want to write any thing we can not write 
+	
+	
+//	public void getNumber(int num) {
+//		System.out.println("getNumber from int parameter "+num);
+//	}
+	public void getNumber(byte num) {
+		System.out.println("getNumber from byte parameter "+num);
+	}
+//	public void getNumber(long num) {
+//		System.out.println("getNumber from long parameter "+num);
+//	}
 
 	public static void main(String[] args) {
 		EmployeeSheet es = new EmployeeSheet();
@@ -135,6 +146,7 @@ public class EmployeeSheet {
 		es.search("Tshirt", "Red", 1000);
 		double tax = es.calculateTax(1000000, 200000, 500000);
 		System.out.println("Tax amount is " + tax);
+		es.getNumber((byte)100);
 	}
 
 }
