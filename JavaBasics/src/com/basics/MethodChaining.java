@@ -34,10 +34,16 @@ public class MethodChaining {
 		obj2.m3();
 	}
 	
-	//non static method calling non static - direct calling
+	//non static method calling non static - direct calling(no object creation is required)
 	//static method calling static method -- direct/using the class name
 	//non static method calling static -- direct/using the class name
 	//Static method calling non static -- create object and call it
+	
+	/*
+	 * Here in this class we are creating 2 objects for the MethodChaining
+	 * at line number 33 we are creating one more object for the MethodChaining class
+	 * 
+	 * */
 
 	public static void main(String[] args) {
 
