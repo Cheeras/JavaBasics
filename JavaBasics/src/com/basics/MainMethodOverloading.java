@@ -9,13 +9,19 @@ public class MainMethodOverloading {
 
 	// JVM - PSVM(String args[])
 	public static void main(String[] args) {
-
+		
+		System.out.println(args.length);
+		
+		
+		
 		System.out.println("hello");
 		MainMethodOverloading.main(100);
 		MainMethodOverloading.main(10, 20);
-
 	}
 
+	public static void main(String[] args1,String[] args2) {
+		System.out.println("Shankar");
+	}
 	public static void main(int a) {
 		System.out.println("Hi " + a);
 	}
