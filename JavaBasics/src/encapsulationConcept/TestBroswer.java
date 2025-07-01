@@ -6,7 +6,7 @@ public class TestBroswer {
 
 		
 		Broswer br = new Broswer();
-		
+		br.launchBroswer();
 	}
 
 }
