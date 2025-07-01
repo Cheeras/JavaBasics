@@ -10,6 +10,7 @@ public class Employee {
 	String dob;
 	boolean isPerm;
 
+	static String companyName = "IBM";
 	//Constructor 
 	/*
 	 * Constructor name should be same as class name, i can not give any other name
@@ -22,6 +23,28 @@ public class Employee {
 	 * Constructor can be overloaded - Yes we can overload
 	 * */
 	
+	/*
+	 * Difference between constructor vs function
+	 * Constructor looks like function but it is not function - Constructor name is same as class name
+	 * But function could be any thing - 
+	 * Constructor can not return any thing - not even void- but function may or may not return 
+	 * Avoid business logic in constructor - but function should have business logic
+	 * Constructor is used to initialize the class(instance) variables with the help of this key word
+	 * Constructor can be overloaded, function also can be overloaded
+	 * Constructor will be called automatically when we create the object of the class
+	 * But function can be called using the object ref name if it is static use the classname
+	 * Constructor will help to create object creation 
+	 * Constructor will go to the class loader not to heap and stack
+	 * 
+	 * */
+	
+	/*✅ Summary
+		What Stored In
+				Constructor definition->Method Area (Metaspace in Java 8+)
+				Object created ->	Heap
+				Constructor parameters & local vars ->	Stack
+				*/
+	
 /*	public Employee() {//0 param constructor//default constructor
 		
 	}
@@ -33,7 +56,11 @@ public class Employee {
 	public Employee(double d) {
 		
 	}*/
-	
+	public void Employee() {//This method has a constructor name- please change it 
+		//Do not create function name same as Class name but it is function not 
+		//recommended to create same name as ClassName
+		
+	}
 	public Employee(String name, int age) {
 		//this.global = local
 		this.name = name;
