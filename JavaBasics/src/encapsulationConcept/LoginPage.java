@@ -71,8 +71,29 @@ public class LoginPage {
 	 * 
 	 * */
 	
+	
 	private String userName;
 	private String passWord;
+	
+	
+	public LoginPage(String userName, String passWord) {
+		this.userName = userName;
+		this.passWord = passWord;
+	}
+	
+	public void doLogin(String uname,String pass) {
+		System.out.println("enter the username : "+getUserName());
+		System.out.println("enter the password : "+getPassWord());
+		System.out.println("Clicked on login button");
+		System.out.println("User is logged in");
+	}
+	
+	public void doLogin() {
+		System.out.println("enter the username : "+getUserName());
+		System.out.println("enter the password : "+getPassWord());
+		System.out.println("Clicked on login button");
+		System.out.println("User is logged in");
+	}
 	
 	public String getUserName() {
 		return userName;
