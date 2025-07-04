@@ -4,7 +4,7 @@ public class LargestOfFourNumbers {
 
 	public static void main(String[] args) {
 
-		int a=300,b=98,c=121,d=231;
+		int a=300,b=98,c=1221,d=231;
 		//find the largest of the 4 numbers
 		//output: 231
 		
@@ -12,16 +12,17 @@ public class LargestOfFourNumbers {
 	}
 	
 	public static void findLargest(int a,int b, int c, int d) {
-		
+		int largest = 0;
 		if(a > b && a > c && a > d) {
-			System.out.println("Gretest number is : " + a);
+			largest = a;
 		} else if (b > a && b > c && b > d) {
-			System.out.println("Gretest number is : " + b);
+			largest = b;
 		} else if(c > a && c > b && c > d){
-			System.out.println("Gretest number is : " + c);
+			largest = c;
 		}else {
-			System.out.println("Gretest number is : " + d);
+			largest = d;
 		}
+		System.out.println("Gretest number is : " + largest);
 	}
 
 }
