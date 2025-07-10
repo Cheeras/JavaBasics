@@ -3,7 +3,7 @@ package com.assignments;
 public class LoginChecker {
 
 	public static void loginChecker(String userName,String password) {
-		if(userName.isBlank() || password.isBlank()) {
+		if(isNullOrBlank(userName) || isNullOrBlank(password)) {
 			System.out.println("Username and password can not be blank");
 			return;
 		}
@@ -14,6 +14,9 @@ public class LoginChecker {
 		}
 	}
 	
+	public static boolean isNullOrBlank(String str) {
+		return str == null || str.trim().isEmpty();
+	}
 	//Check if a username and password match (simple login check)
 	public static void main(String[] args) {
 		loginChecker(null, null);
