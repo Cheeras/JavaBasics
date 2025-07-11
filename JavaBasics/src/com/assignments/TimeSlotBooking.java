@@ -3,7 +3,7 @@ package com.assignments;
 public class TimeSlotBooking {
 
     public static void main(String[] args) {
-        int hour = 13; // You can take input from user via Scanner or pass dynamically
+        int hour =10;//You can take input from user via Scanner or pass dynamically
 
         if (hour < 0 || hour > 23) {
             System.out.println("Invalid time entered");
