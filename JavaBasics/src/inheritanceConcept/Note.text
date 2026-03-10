@@ -1,0 +1,12 @@
+Inheritance in Java is an OOP(Object Oriented Programing) concept where one class acquires the properties and behaviors(Variables and methods) of another class.
+
+	The Class that gives Properties is called the Parent class/Superclass/Base class
+	The class that receives properties is called the Child class/subclass/Derived class
+
+Inheritace is implemented using the extends keyword in java
+
+Why Inheritance used
+Code Reusability 
+Maintainability
+Extensibility
+Logical hierachy
