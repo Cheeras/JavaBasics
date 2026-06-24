@@ -16,4 +16,7 @@ public class Car {
 	public void applyBreak() {
 		System.out.println("Car applyBreak");
 	}
+	public static void billing() {
+		System.out.println("Car --- Billing");
+	}
 }
