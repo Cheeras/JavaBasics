@@ -1,0 +1,23 @@
+📌 Java String Concatenation & Character Operations – Summary
+String is a non-primitive data type (a class in Java).
+The + operator has two purposes:
+Arithmetic addition for numeric data types.
+String concatenation when at least one operand is a String.
+Java evaluates expressions from left to right.
+Parentheses () have higher precedence and are evaluated first.
+Once a String is encountered in an expression, subsequent + operations perform concatenation.
+Numeric values appearing after a String are automatically converted to String.
+char is a primitive data type that stores a single Unicode character.
+Characters are internally represented by their numeric Unicode values (which match ASCII for standard English characters).
+Arithmetic operations (+, -, etc.) on char use their numeric Unicode values.
+Concatenating a char with a String results in String concatenation.
+Performing arithmetic between two char values produces a numeric result, not another char.
+Character literals can participate in arithmetic expressions just like numeric values.
+ASCII/Unicode values of characters can be obtained using type casting or by adding 0.
+Standard ASCII values (0–127) fall within the range of the byte data type.
+Common ASCII ranges:
+A–Z → 65–90
+a–z → 97–122
+0–9 → 48–57
+Java performs automatic type conversion (type promotion) during mixed-type expressions.
+Understanding the evaluation order is essential to correctly predict the output of expressions involving String, char, and numeric data types.

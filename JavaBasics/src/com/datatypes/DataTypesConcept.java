@@ -86,6 +86,8 @@ public class DataTypesConcept {
 		//decimal values means point values
 		//size 4 byte = 4*8 =32
 		//Range: after . it can take upto 6 to 7 digits
+		// for float before . decimal we can accomadate upto 39 digits
+		// in case of double it will be 309 digits
 		float n1 = 9.3f;
 		float n2 = (float)23.52;
 		System.out.println(n1);
