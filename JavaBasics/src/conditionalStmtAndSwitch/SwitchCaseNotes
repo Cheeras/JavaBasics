@@ -1,0 +1,25 @@
+Best Practices for Writing a switch Statement in Java
+=====================================================
+Use switch when comparing a single expression against multiple fixed values.
+Ensure each case label contains a unique constant value.
+Add a break statement at the end of each case to prevent unintended fall-through.
+Omit break only when fall-through is intentional, and add a comment explaining the reason.
+Always include a default case to handle unexpected or unsupported values.
+Keep each case focused on a single responsibility to improve readability and maintainability.
+Group multiple case labels together when they should execute the same logic.
+Use meaningful variable names for the expression being evaluated.
+Avoid writing complex business logic directly inside case blocks; delegate it to separate
+methods when possible.
+Remember that once a matching case is found, Java jumps to that location and executes statements 
+sequentially until it encounters a break, return, throw, or reaches the end of the switch.
+Do not rely on fall-through behavior unless it is a deliberate design choice, as it can make
+ the code difficult to understand and maintain.
+Prefer the enhanced switch expressions (introduced in newer Java versions) when you need to
+ return a value, as they eliminate accidental fall-through and produce cleaner, more concise code.
+
+Key Takeaway
+
+A switch statement performs the comparison only once to identify the matching case. After that,
+ it executes statements sequentially from the matched case until it encounters a break, return,
+  throw, or the end of the switch block. Therefore, using break appropriately is essential to 
+  avoid unintended execution of subsequent cases.
