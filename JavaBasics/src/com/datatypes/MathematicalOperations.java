@@ -23,7 +23,7 @@ public class MathematicalOperations {
 		System.err.println(9/0.0);//Infinity
 		System.err.println(9.0/0.0);//Infinity
 		//System.out.println(0/0);////java.lang.ArithmeticException: / by zero
-		
+		//System.out.println(9/0);////java.lang.ArithmeticException: / by zero
 		//System.out.println(-1/0);//java.lang.ArithmeticException: / by zero
 		
 		System.out.println(2/9);//0
@@ -46,6 +46,18 @@ public class MathematicalOperations {
 		System.out.println(10 % 4); //2
 		
 		System.out.println(100 % 3); //1
+		
+		System.out.println(0 % 9);//0
+		
+		//System.out.println(0 % 0);////java.lang.ArithmeticException: / by zero
+		
+		System.out.println(10 % 0.0);//NaN
+		
+		System.out.println(0.1+0.2);//0.30000000000000004
+		//with the double number output is always suprise
+		System.out.println(0.1+0.4);//0.5
+		
+		System.out.println(0.3+0.6);
 		
 
 	}
