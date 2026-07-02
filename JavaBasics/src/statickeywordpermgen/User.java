@@ -25,6 +25,18 @@ public class User {
 		System.out.println(u2.name +" "+ u2.age +" "+ u2.city);
 		System.out.println(u3.name +" "+ u3.age +" "+ u3.city);
 		
+		u1=u2=u3;//how to solve this left to right or right to left
+		//ans: Right to left
+System.out.println("===========================");
+		
+		System.out.println("==================");
+		
+		System.out.println(u1.name +" "+ u1.age +" "+ u1.city);
+		System.out.println(u2.name +" "+ u2.age +" "+ u2.city);
+		System.out.println(u3.name +" "+ u3.age +" "+ u3.city);
+		
+		System.out.println("===========================");
+		
 		System.out.println("==================");
 		
 		u1=u2;//u1 will break the existing connection and start pointing to same u2 object location
@@ -51,6 +63,8 @@ public class User {
 		System.out.println(u1.name +" "+ u1.age +" "+ u1.city);
 		System.out.println(u2.name +" "+ u2.age +" "+ u2.city);
 		System.out.println(u3.name +" "+ u3.age +" "+ u3.city);
+		
+		
 		
 		
 		
