@@ -8,7 +8,7 @@ public class TestMethod {
 	}
 	
 	public static void sendMail() {//static method
-		System.out.println("send Mail");
+		System.out.println("send Mail");//
 	}
 	
 	//can we overload static method 
