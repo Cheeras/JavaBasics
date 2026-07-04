@@ -15,7 +15,7 @@ public class CallByRef {
 		p1.name = "shankar";
 		p1.age = 30;
 		System.out.println(p1.name);
-		System.out.println(p1.age);
+		System.out.println(p1.age);//
 		
 		
 	}

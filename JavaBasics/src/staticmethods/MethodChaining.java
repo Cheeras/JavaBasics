@@ -26,7 +26,7 @@ public class MethodChaining {
 	}
 	
 	public static void t2() {
-		System.out.println("t2 method");
+		System.out.println("t2 method");//
 		t3();
 	}
 	
