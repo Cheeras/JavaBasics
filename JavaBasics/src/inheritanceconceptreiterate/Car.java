@@ -6,9 +6,10 @@ package inheritanceconceptreiterate;
  * */
 //final class - to prevent inheritance
 //means we can not create child class for the class
-public class Car {
+public class Car extends Vehicle {
 	
 	int speed =100;
+	int price = 70;
 	
 	public void start() {
 		System.out.println("car start");
@@ -34,5 +35,14 @@ public class Car {
 	private void getInfo() {
 		System.out.println("car getInfo method");
 	}
+	
+	@Override
+	public void engine() {
+		System.out.println("Car engine");
+	}
 
+	@Override
+	public void cruiceControl() {
+		System.out.println("Car cruiceControl");
+	}
 }
