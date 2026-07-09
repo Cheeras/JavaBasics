@@ -3,6 +3,7 @@ package inheritanceconceptreiterate;
 public class BMW extends Car {
 	
 	int speed = 200; 
+	int price = 500;
 
 	// Method overriding -- Poly(many)+Morphism(forms): RunTime (dynamic)
 	// polymorphim
@@ -22,6 +23,9 @@ public class BMW extends Car {
 
 	public void autoParking() {
 		System.out.println("BMW -- Auto parking");
+		applyBreak();//method chaining
+		stop();//inheritance
+		
 	}
 	// non static methods can not be overriden - it is called method hiding
 //	public static void billing() {
@@ -45,6 +49,24 @@ public class BMW extends Car {
 	
 	public void speedTracking() {
 		System.out.println("BMW -- SpeedTracking");
+	}
+	
+	@Override
+	public void engine() {
+		System.out.println("BMW engine");
+	}
+	
+	public void bmwLoading() {
+		//here i want to call the Truck class heavyLoading() method
+		//how can i call
+		//there is not relation ship between BMW and Truck class
+		Truck tr = new Truck();//BMW class is having the Truck class object
+		//and able to access its methods:Composition
+		tr.heavyLoading();//this is called composition
+	}
+	
+	public void cruiceControl() {
+		System.out.println("BMW cruiceControl");
 	}
 
 }
