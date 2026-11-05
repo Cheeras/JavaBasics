@@ -2,7 +2,7 @@ package inheritanceconceptreiterate;
 /*
  * Very important
  * what is mean by inheritance
- * Inherit some thing for parents 
+ * Inheriting something from parent class
  * */
 //final class - to prevent inheritance
 //means we can not create child class for the class

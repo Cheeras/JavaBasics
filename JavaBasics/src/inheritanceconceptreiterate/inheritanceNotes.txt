@@ -1,0 +1,5 @@
+What is Inheritance
+Inheriting something from parent class
+We can also define like if child class trying to reuse the parent class 
+We can achieve reusebility through inheritance
+Method 
