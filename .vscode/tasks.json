@@ -1,0 +1,23 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Compile & Run Java File",
+            "type": "shell",
+            "command": "cmd",
+            "args": [
+                "/c",
+                "powershell -NoProfile -ExecutionPolicy Bypass -File \"${workspaceFolder}\\.vscode\\runjava.ps1\" -filePath \"${file}\" -srcDir \"${workspaceFolder}\\JavaBasics\\src\" -binDir \"${workspaceFolder}\\JavaBasics\\bin\""
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "problemMatcher": ["$javac"],
+            "presentation": {
+                "clear": true,
+                "reveal": "always"
+            }
+        }
+    ]
+}
