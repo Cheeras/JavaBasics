@@ -1,4 +1,4 @@
-package interviewquestions2026;
+package interviewquestions2026.Arrays;
 
 import java.util.HashMap;
 import java.util.Map;
